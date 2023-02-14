@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+ 
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="{% static 'bareily2.jpg' %}" class="d-block w-100" alt="..." style="width:100%;min-height:350px;max-height:600px;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'gorakhpur.jpg' %}" class="d-block w-100" alt="..." style="width:100%;min-height:350px;max-height:600px;">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'bank.jpg' %}" class="d-block w-100" alt="..." style="width:100%;min-height:350px;max-height:600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'kolkata.jpg' %}" class="d-block w-100" alt="..." style="width:100%;min-height:350px;max-height:600px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <!-- <img src="{% static 'bank.jpg' %}" alt="boat" style="width:100%;min-height:350px;max-height:600px;"> -->
+    <!-- <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="DHAN DENA BANK">DHAN DENA BANK</button>
+    </div> -->
+  </div>
+  
+  <!-- Team Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2>OUR TEAM</h2>
+  <p>Meet the team</p>
+  
+  <div class="w3-row"><br>
+    <div class="w3-quarter">
+      <img src="{% static 'lakshmi2.jpg' %}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Lakshmi</h3>
+      <p>CEO</p>
+    </div>
+
+  <div class="w3-quarter">
+    <img src="{% static 'hero-carousel-3.jpg' %}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Archisman Bhattacharya</h3>
+    <p>Full Stack Devloper</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="{% static 'hero-carousel-4.jpg' %}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Prakash Yadava</h3>
+    <p>Full Stack Devloper</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="{% static 'hero-carousel-5.jpg' %}" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Sparsh Agarwal</h3>
+    <p>Full Stack Devloper</p>
+  </div>
+  
+  
+  </div>
+  </div>
+  
+  <!-- Work Row -->
+  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+  
+  <div class="w3-quarter">
+  <h2>Our Branch</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="{% static 'bareily2.jpg' %}" alt="Snow" style="width:100%">
+    <div class="w3-container">
+    <h3>Bareily</h3>
+    <!-- <h4>Bareily</h4> -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="{% static 'gorakhpur.jpg' %}" alt="Lights" style="width:100%">
+    <div class="w3-container">
+    <h3>Gorakhpur</h3>
+    <!-- <h4>Gorakhpur</h4> -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="{% static 'kolkata.jpg' %}" alt="Mountains" style="width:100%">
+    <div class="w3-container">
+    <h3>Kolkata</h3>
+    <!-- <h4>Kolkata</h4> -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  <!-- Container -->
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+    style="position:absolute;top:-28px;right:24px">+</a>
+  </div>
+  
+  <!-- Pricing Row -->
+  <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+      <h2>Loan</h2>
+      <p>Choose a loan plan that fits your needs.</p><br>
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme">
+            <p class="w3-xlarge">Home Loan</p>
+          </li>
+          <li class="w3-padding-16"><b>1</b> Crore</li>
+          <li class="w3-padding-16"><b>10</b> Years</li>
+          <li class="w3-padding-16"><b>24 X 7</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide"><i class="fa fa-usd"></i> @ 8%</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>Get Loan</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme-l2">
+            <p class="w3-xlarge">Car Loan</p>
+          </li>
+          <li class="w3-padding-16"><b>25</b> Lacs</li>
+          <li class="w3-padding-16"><b>5</b> Years</li>
+          <li class="w3-padding-16"><b>24 X 7</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide"><i class="fa fa-usd"></i> @ 8%</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Get Loan</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme">
+            <p class="w3-xlarge">Education Loan</p>
+          </li>
+          <li class="w3-padding-16"><b>10</b> Lacs</li>
+          <li class="w3-padding-16"><b>4</b> Years</li>
+          <li class="w3-padding-16"><b>24 X 7</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide"><i class="fa fa-usd"></i> @ 5%</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Get Loan</button>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <!-- Contact Container -->
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+        <h3>Address</h3>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Pune, Maharastra, India</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +91 9764675423</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  dhanDenaBank@gmail.com</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="" method="POST">
+          {% csrf_token %}
+        <div class="w3-section">      
+          <label>Name</label>
+          <p class="w3-input" type="text" name="Message" required>{{form.name}}</p>
+        </div>
+        <div class="w3-section">      
+          <label>Email</label>
+          <p class="w3-input" type="text" name="Message" required>{{form.email}}</p>
+        </div>
+        <div class="w3-section">      
+          <label>Message</label>
+          {% comment %} <input class="w3-input" type="text" name="Message" required> {% endcomment %}
+          <p class="w3-input" type="text" name="Message" required>{{form.message}}</p>
+        </div>  
+        
+        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+
+{% endblock body %}
